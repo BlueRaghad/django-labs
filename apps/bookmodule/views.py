@@ -6,7 +6,7 @@ from django.shortcuts import render
 def index(request):
     name = request.GET.get("name") or "World!"
     #return HttpResponse("hello, " + name)
-    return render(request, "bookmodule/index.html")
+    return render(request, "bookmodule/index.html", {"name": name})
 
-#def index2(request, val = 0):
- #   return HttpResponse("value = " + str(val))
+def index2(request, val = 0):
+    return render(request, "bookmodule/index2.html",{"val": val})
