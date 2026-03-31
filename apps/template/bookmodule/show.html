@@ -1,14 +1,9 @@
-<!DOCTYPE html>
+{% extends "layouts/base.html" %}
 {% load static %}
-<html lang="en">
-<head>
-    <title>Book Details</title>
-    <link rel="icon" href="{% static 'images/qu-icon.png' %}">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-</head>
-<body>
 
+{% block title %}Book Details{% endblock title %}
+
+{% block content %}
     <a href="{% url 'books.list_books' %}">Go Back</a>
 
     <h1>Book Details</h1>
@@ -17,6 +12,4 @@
     <h4>Author: {{ book.author }}</h4>
     <h4>Description</h4>
     <p>Description here</p>
-
-</body>
-</html>
+{% endblock content %}

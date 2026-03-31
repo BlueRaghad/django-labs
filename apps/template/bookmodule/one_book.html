@@ -1,28 +1,18 @@
-<!DOCTYPE html>
-<html>
+{% extends "layouts/base.html" %}
 {% load static %}
-<head>
-    <title>Show one Book</title>
-    <meta name="keywords" content="Books, recent, Learning, library">
-    <meta name="description" content="Books website">
-    <meta name="author" content="author name">
-    <link rel="icon" href="{% static 'images/qu-icon.png' %}">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
-</head>
-<body>
 
+{% block title %}Show one Book{% endblock title %}
+
+{% block content %}
     <a href="{% url 'books.list_books' %}">Go Back</a>
 
     <h1>Details of Book1</h1>
     <h2>Internet & World Wide Web How to Program</h2>
     <h2>Author: author name</h2>
     <p>
-        <strong>Internet & World Wide Web How to Program, 5/e</strong> 
-        provides a clear, simple, engaging and entertaining introduction 
+        <strong>Internet & World Wide Web How to Program, 5/e</strong>
+        provides a clear, simple, engaging and entertaining introduction
         to Internet and web programming.
     </p>
     <img src="{% static 'images/book1.png' %}" alt="Book1" width="200" height="200">
-
-</body>
-</html>
+{% endblock content %}
