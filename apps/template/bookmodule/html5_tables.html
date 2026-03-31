@@ -1,0 +1,81 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %}HTML5 Tables{% endblock title %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{% static 'main.css' %}">
+{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- Table 1 -->
+    <table>
+        <caption>Table 1: Table of Fruits and Their Prices</caption>
+        <thead>
+            <tr>
+                <th>Fruit</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Apple</td><td>$0.25</td></tr>
+            <tr><td>Orange</td><td>$0.50</td></tr>
+            <tr><td>Banana</td><td>$1.00</td></tr>
+            <tr><td>Pineapple</td><td>$2.00</td></tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>$3.75</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+
+    <!-- Table 2 -->
+    <p>Table 2: A more complex sample table</p>
+    <table>
+        <tr>
+            <td rowspan="3">
+                <img src="{% static 'images/book1.png' %}" width="150" height="150">
+            </td>
+            <td colspan="4" style="text-align:center;">
+                <strong>Camelid comparison</strong><br>
+                Approximate as of 6/2011
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <th># of humps</th>
+            <th>Indigenous region</th>
+            <th>Spits?</th>
+            <th>Produces wool?</th>
+        </tr>
+        <tr>
+            <td><strong>Dromedary</strong></td>
+            <td>1</td>
+            <td>Arabian Peninsula</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td><strong>Camels (bactrian)</strong></td>
+            <td>2</td>
+            <td>Africa/Asia</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td><strong>Llamas</strong></td>
+            <td>1</td>
+            <td>Andes Mountains</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+
+{% endblock content %}
