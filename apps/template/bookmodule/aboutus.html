@@ -2,7 +2,7 @@
 {% load static %}
 <html lang="en">
 <head>
-<title>My First Index HTML Page</title>
+<title>About Us</title>
 <meta name="keywords" content="Books, recent, Learning, library">
 <meta name="description" content="Books website">
 <meta name="author" content="author name">
@@ -10,25 +10,18 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
-
 <body>
-    <div class="topnav"> <!-- add class attribute -->
+<div class="topnav"> <!-- add class attribute -->
         <a class="active" href="{% url "books.index" %}">Home</a> <!-- URL template tag
 -->
         <a href="{% url "books.list_books" %}">List Books</a> <!-- URL template tag -->
         <a href="{% url "books.aboutus" %}">About</a> <!-- URL template tag -->
     </div>
-    <h1 style="color: blue;">This is heading 1 (Library)</h1> <!-- add inline css
--->
-    <p style="color: white;background-color: black;">This is a paragraph text </p>
-<!-- add inline css -->
-    <a href="https://www.w3schools.com/html/default.asp">Learn more about HTML</a>
-    <hr>
-<!-- This is a comment in HTML, not render in the bowser -->
-    <h2>This is heading 2</h2>
-    <p>This is some other text. <br> with newline <br> and another line</p>
-    <hr>
-    <h2>This is heading 2</h2>
-    <p>This is some other text.</p>
+
+<h1>About us</h1>
+<p>This is a paragraph text This is a paragraph text This is a paragraph text
+This is a paragraph text </p>
+<p>To write to <a href="mailto:email@domain.com">our store</a>, click the link
+and your default email client will open an email message and address it to us. </p>
 </body>
 </html>
