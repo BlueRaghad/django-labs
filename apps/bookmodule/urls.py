@@ -11,4 +11,6 @@ urlpatterns = [
     path('html5/text/formatting/', views.html5_formatting, name='books.html5_formatting'),
     path('html5/listing/', views.html5_listing, name='books.html5_listing'),
     path('html5/tables/', views.html5_tables, name='books.html5_tables'),
+    #lab 6
+    path('search/', views.search, name='books.search'),
 ]

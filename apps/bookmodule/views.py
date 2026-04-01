@@ -33,3 +33,7 @@ def html5_listing(request):
 
 def html5_tables(request):
     return render(request, 'bookmodule/html5_tables.html')
+
+#lab 6
+def search(request):
+    return render(request, 'bookmodule/search.html')
